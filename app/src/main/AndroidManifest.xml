@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Geagonia_MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".SMS"
+            android:exported="false" />
+        <activity
             android:name=".Activity_Registration"
             android:exported="false" />
         <activity

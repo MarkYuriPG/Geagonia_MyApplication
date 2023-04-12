@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_Activity5:
                 Toast.makeText(this, "Activity 5 button is clicked", Toast.LENGTH_SHORT).show();
+                Intent intent5 = new Intent(this, SMS.class);
+                startActivity(intent5);
                 break;
         }
     }
