@@ -102,5 +102,22 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SmallSP" />
 
+    <Button
+        android:id="@+id/bt_Activity6"
+        android:layout_width="138dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="136dp"
+        android:backgroundTint="@color/caramel"
+        android:fontFamily="monospace"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/Act_6"
+        android:textAlignment="center"
+        android:textColor="@color/amebg"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSP" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

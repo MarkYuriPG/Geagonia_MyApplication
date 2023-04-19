@@ -13,7 +13,7 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button bt_Activity1, bt_Activity2, bt_Activity3, bt_Activity4, bt_Activity5;
+    Button bt_Activity1, bt_Activity2, bt_Activity3, bt_Activity4, bt_Activity5, bt_Activity6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,12 +27,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_Activity3 = (Button) findViewById(R.id.bt_Activity3);
         bt_Activity4 = (Button) findViewById(R.id.bt_Activity4);
         bt_Activity5 = (Button) findViewById(R.id.bt_Activity5);
+        bt_Activity6 = (Button) findViewById(R.id.bt_Activity6);
 
         bt_Activity1.setOnClickListener(this);
         bt_Activity2.setOnClickListener(this);
         bt_Activity3.setOnClickListener(this);
         bt_Activity4.setOnClickListener(this);
         bt_Activity5.setOnClickListener(this);
+        bt_Activity6.setOnClickListener(this);
 
     }
 
@@ -44,21 +46,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_Activity1:
                 Toast.makeText(this, "Activity 1 button is clicked", Toast.LENGTH_SHORT).show();
                 break;
+
             case R.id.bt_Activity2:
                 Toast.makeText(this, "Activity 2 button is clicked", Toast.LENGTH_SHORT).show();
                 Intent intent2 = new Intent(this, MainActivity2_Menu.class);
                 startActivity(intent2);
                 break;
+
             case R.id.bt_Activity3:
                 Toast.makeText(this, "Activity 3 button is clicked", Toast.LENGTH_SHORT).show();
                 break;
+
             case R.id.bt_Activity4:
                 Toast.makeText(this, "Activity 4 button is clicked", Toast.LENGTH_SHORT).show();
                 break;
+
             case R.id.bt_Activity5:
                 Toast.makeText(this, "Activity 5 button is clicked", Toast.LENGTH_SHORT).show();
                 Intent intent5 = new Intent(this, SMS.class);
                 startActivity(intent5);
+                break;
+
+            case R.id.bt_Activity6:
+                Toast.makeText(this, "Activity 6 button is clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
