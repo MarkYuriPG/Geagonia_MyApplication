@@ -4,8 +4,8 @@
     <string name="Act_2">Activity 2</string>
     <string name="Act_3">Activity 3</string>
     <string name="Act_4">Activity 4</string>
-    <string name="Act_5">Activity 5</string>
-    <string name="Act_6">Activity 6</string>
+    <string name="Act_5">SMS App</string>
+    <string name="Act_6">Google Map</string>
     <string name="Name">Name</string>
     <string name="Gender">Gender</string>
     <string name="Label">This page displays the input from the Registration</string>

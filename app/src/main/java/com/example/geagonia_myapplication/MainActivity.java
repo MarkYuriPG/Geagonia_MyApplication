@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +14,7 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button bt_Activity1, bt_Activity2, bt_Activity3, bt_Activity4, bt_Activity5, bt_Activity6;
+    Button bt_Activity1, bt_Activity2, bt_Activity3, bt_Activity4, bt_Activity5, bt_GoogleMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,14 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_Activity3 = (Button) findViewById(R.id.bt_Activity3);
         bt_Activity4 = (Button) findViewById(R.id.bt_Activity4);
         bt_Activity5 = (Button) findViewById(R.id.bt_Activity5);
-        bt_Activity6 = (Button) findViewById(R.id.bt_Activity6);
+        bt_GoogleMap = (Button) findViewById(R.id.bt_GoogleMap);
 
         bt_Activity1.setOnClickListener(this);
         bt_Activity2.setOnClickListener(this);
         bt_Activity3.setOnClickListener(this);
         bt_Activity4.setOnClickListener(this);
         bt_Activity5.setOnClickListener(this);
-        bt_Activity6.setOnClickListener(this);
+        bt_GoogleMap.setOnClickListener(this);
 
     }
 
@@ -67,8 +68,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent5);
                 break;
 
-            case R.id.bt_Activity6:
+            case R.id.bt_GoogleMap:
                 Toast.makeText(this, "Activity 6 button is clicked", Toast.LENGTH_SHORT).show();
+                Intent intent6 = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:10.316720, 123.890710"));
                 break;
         }
     }

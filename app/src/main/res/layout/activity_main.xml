@@ -103,7 +103,7 @@
         tools:ignore="SmallSP" />
 
     <Button
-        android:id="@+id/bt_Activity6"
+        android:id="@+id/bt_GoogleMap"
         android:layout_width="138dp"
         android:layout_height="44dp"
         android:layout_marginTop="516dp"
