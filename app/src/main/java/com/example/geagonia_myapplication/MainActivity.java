@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_GoogleMap:
                 Toast.makeText(this, "Activity 6 button is clicked", Toast.LENGTH_SHORT).show();
                 Intent intent6 = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:10.316720, 123.890710"));
+                startActivity(intent6);
                 break;
         }
     }
